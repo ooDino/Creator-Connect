@@ -15,7 +15,7 @@ main {
 }
 
 header {
-    background-color: white;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,10 +24,12 @@ header {
     display: flex;
     align-items: center;
     box-shadow: 0 0 25px 0 black;
+    overflow: hidden;
+
 }
 
 header * {
-    display: inline;
+    display: flex;
 }
 
 header li {
@@ -35,15 +37,27 @@ header li {
 }
 
 header li a {
-    color: black;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+    vertical-align:middle;
+    overflow: hidden;
+
 }
 
-#navitems{
+#navitems-left{
     font-size: 18px;
+    float: left;
+    padding: 10px;
+}
+
+#navitems-right{
+    font-size: 18px;
+    float: right;
+    padding: 10px;
 }
 
 #creatorconnect {
     font-size: 30px;
-    vertical-align: middle;
+    vertical-align:middle;
 }
