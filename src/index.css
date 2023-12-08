@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  .defaultbut{
+    @apply text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 mx-5 font-medium text-2xl
+  }
+
+}
+
+@layer title{
+
+  h1{
+    @apply text-6xl
+  }
+
+}
+
+@layer profilebox{
+  .myprofile{
+    
+  }
+}
+
+@layer subText{
+  .mysubtext{
+    @apply text-3xl my-5 font-medium
+  }
+
+}
+
