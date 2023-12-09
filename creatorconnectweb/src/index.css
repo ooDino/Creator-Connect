@@ -1,38 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  .defaultbut{
+    @apply text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 mx-5 font-medium text-2xl
+  }
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer title{
+
+  h1{
+    @apply text-6xl
+  }
+
 }
 
-.navbar a{
-  color: white;
-  padding:30px;
-  text-align:center;
-  text-decoration: none;
-  font-size:30px;
-  display:inline-block;
-  justify-content:center;
-  box-shadow: 0 0 25px 0 black;
+@layer profilebox{
+  .myprofile{
+    
+  }
 }
 
-.navbar ul{
-  list-style-type: none;
-  background-color:rgb(44, 44, 44);
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-}
+@layer subText{
+  .mysubtext{
+    @apply text-3xl my-5 font-medium
+  }
 
-.navbar li{
-  float:left;
 }
-
 

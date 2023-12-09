@@ -1,12 +1,9 @@
-
 import { BrowserRouter , Routes, Route} from 'react-router-dom'
-import Landingpage from './pages/Landing.js'
-import Profilepage from './pages/Profile.js'
-import Searchpage from './pages/UserSearch.js'
-import Tutorialpage from './pages/Tutorial.js'
-import ContactUs from './pages/Contact.js'
-
-import './App.css';
+import Landingpage from './pages/Landing.jsx'
+import Profilepage from './pages/Profile.jsx'
+import Searchpage from './pages/UserSearch.jsx'
+import Tutorialpage from './pages/Tutorial.jsx'
+import ContactUs from './pages/Contact.jsx'
 
 function App() {
   return (
