@@ -4,11 +4,11 @@ import UserDisplay from './UserDisplay.jsx';
 function Search() {
   return (
     <div className="flex flex-col box-border h-full w-full pt-10 ">
-      <div className="flex box-border h-[50px] w-full justify-center text-white text-3xl">
+      <div className="flex box-border h-[50px] w-full justify-center text-white text-2xl">
         Search:
-        <div className="flex rounded-full bg-white h-11 w-4/6 border-double border-4 border-cyan-400 mx-5 px-5 text-black outline-none">
-          <form className="w-[300px]">
-            <input className="w-full sm:w-80" placeholder="Search User . . ." />
+        <div className="flex rounded-full bg-white h-11 w-5/6 border-double border-4 border-cyan-400 mx-5 px-5 text-black outline-none">
+          <form className="w-full">
+            <input size="40" className="flex pr-[-500px] border-none w-[1000px] sm:w-80" placeholder="Search User . . ." />
           </form>
         </div>
       </div>

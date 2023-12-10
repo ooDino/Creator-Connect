@@ -14,10 +14,10 @@ function DemoClips(props){
                     </div>
                     <div class="flex flex-flow-row justify-evenly">
                         <div class="bg-slate-800 h-[150px] w-[250px]">
-
+                        <iframe class="w-full"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                         </div>
                         <div class="bg-slate-800 h-[150px] w-[250px]">
-
+                        <iframe class="w-full"src="https://www.youtube.com/embed/YSxesqXFeQE"></iframe>
                         </div>
                         <div class="bg-slate-800 h-[150px] w-[250px]">
                             

@@ -2,7 +2,7 @@ import '../index.css';
 
 function NameBio(){
     return(
-        <div class="  box-border border-white min-h-[300px] min-w-[300px] w-[600px] max-h-[400px] border-[10px] rounded-2xl shadow-2xl bg-slate-200">
+        <div class="  box-border border-white lg:min-h-[300px] lg:min-w-[300px] lg:w-[600px] lg:max-h-[400px] sm:w-full sm:h-[250px] border-[10px] rounded-2xl shadow-2xl bg-slate-200">
             {/* Name and Bio */}
             <div class="flex flex-col h-full w-full px-[15px]">
                     <div class="flex justify-start h-[50%] w-full font-bold text-4xl pt-[50px] bg-slate-200">

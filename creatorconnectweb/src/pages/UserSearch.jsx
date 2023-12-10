@@ -6,7 +6,7 @@ function Searchpage(){
     return (
         <div>
             <Navbar />
-            <div class="bg-gradient-to-t from-violet-500 to-fuchsia-500 h-screen">
+            <div class=" bg-gradient-to-b from-stone-950 from-10% via-slate-800 via-40% to-stone-950 to-90% h-screen">
                 <Search />
             </div>
         </div>

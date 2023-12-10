@@ -4,11 +4,21 @@ import '../index.css';
 
 function ProfileTags(){
 
-    function returnTags(tagdata){
-        const mytagdata = JSON.parse(tagdata);
-        /* In here we loop through the json provided by the DB */
-    }
-
+    function allTags(){ 
+        if(zip.length !== 5){
+          setmyzipdata([]);
+          // console.log(myzipdata.length);
+        }
+        else{
+          const URL = `https://ctp-zip-code-api.onrender.com/zip/${zip}`
+          fetch(URL)
+          .then(res => res.json())
+          .then(data => {
+            setmyzipdata(data);
+          })
+          .catch(err => console.log('Error'))
+        }
+      }
 
     return(
         <div class="  box-border border-white min-h-[300px] min-w-[300px] w-[900px] max-h-[400px] border-[10px] rounded-2xl shadow-2xl bg-slate-200">
