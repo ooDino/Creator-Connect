@@ -1,5 +1,3 @@
-// Search.jsx
-
 import '../index.css';
 import React, { useState } from 'react';
 import UserDisplay from './UserDisplay.jsx';
@@ -36,9 +34,7 @@ function Search() {
   ];
 
   const handleSearch = () => {
-    // Perform search logic here based on searchTerm and selectedTags
-    // Filter users based on the search criteria
-    // You can use a more advanced search algorithm based on your needs
+    
   };
 
   const clearSearch = () => {
@@ -47,23 +43,17 @@ function Search() {
   };
 
   const handleTagClick = (tag) => {
-    // Check if the tag is already selected
     if (selectedTags.includes(tag)) {
-      // If selected, remove the tag from the selectedTags array
       setSelectedTags((prevTags) => prevTags.filter((selectedTag) => selectedTag !== tag));
     } else {
-      // If not selected, add the tag to the selectedTags array
       setSelectedTags((prevTags) => [...prevTags, tag]);
     }
   };
 
-  // Filter users based on selected tags
   const filteredUsers = users.filter((user) => {
     if (selectedTags.length === 0) {
-      // If no tags selected, show all users
       return true;
     }
-    // Show users that have at least one matching tag
     return user.tags.some((userTag) => selectedTags.includes(userTag));
   });
 
@@ -91,7 +81,6 @@ function Search() {
       </div>
 
       <div className="flex space-x-2 my-2">
-        {/* Render selected tags */}
         {selectedTags.map((tag) => (
           <div key={tag} className="rounded-full text-white px-2 py-1" style={{ backgroundColor: 'blue' }}>
             {tag}
@@ -100,8 +89,6 @@ function Search() {
       </div>
 
       <div className="flex space-x-2 my-2">
-        {/* Render available tags for selection */}
-        {/* Assuming you have a predefined set of tags */}
         {['Chef', 'Foodie', 'Gamer', 'eSports', 'Pizza Lover', 'Milkshake Enthusiast'].map((tag) => (
           <button
             key={tag}
@@ -114,7 +101,6 @@ function Search() {
       </div>
 
       <div className="flex flex-col">
-        {/* Render UserDisplay components based on search results */}
         {filteredUsers.map((user, index) => (
           <UserDisplay key={index} {...user} />
         ))}

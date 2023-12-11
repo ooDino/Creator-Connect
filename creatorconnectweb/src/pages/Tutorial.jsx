@@ -16,6 +16,7 @@ function Tutorialpage(){
                         </div>
                     </div>
                 </div>
+                <p class="text-2xl">WIP</p>
             </div>
             
         </div>
