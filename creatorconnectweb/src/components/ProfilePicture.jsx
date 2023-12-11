@@ -1,6 +1,6 @@
 import '../index.css';
 
-function ProfilePicture(){
+function Match(){
     return(
         <div class=" box-border border-white lg:min-h-[300px] lg:min-w-[300px] lg:max-w-[500px] lg:max-h-[400px] sm:w-full sm:h-[250px] border-[10px] rounded-2xl shadow-2xl bg-slate-200">
             {/* Profile Picture and Socials */}
@@ -21,4 +21,4 @@ function ProfilePicture(){
     )
 }
 
-export default ProfilePicture;
+export default Match;

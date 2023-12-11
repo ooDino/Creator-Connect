@@ -4,7 +4,6 @@ function DemoClips(props){
 
     return(
         <div class="  box-border border-white min-h-[300px] min-w-[300px] w-[900px] max-h-[400px] border-[10px] rounded-2xl shadow-2xl bg-slate-200">
-            {/* Name and Bio */}
             <div class="flex flex-col h-full w-full px-[15px]">
                     <div class="flex justify-start h-[50%] w-full font-bold text-4xl pt-[20px] bg-slate-200">
                         Clips

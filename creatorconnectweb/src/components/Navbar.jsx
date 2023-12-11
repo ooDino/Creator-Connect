@@ -16,7 +16,8 @@ function Navbar(){
             <ul class="relative flex h-30 mx-auto justify-between">
                 <div class="relative flex items-center my-5 mx-5">
                     <li class="defaultbut"><a href="landing">Home</a></li>
-                    <li class="defaultbut"><a href="profile">Profile</a></li>    
+                    <li class="defaultbut"><a href="profile">Profile</a></li>
+                    <li class="defaultbut"><a href="match">Match</a></li>  
                 </div>
                 <div class="flex items-center my-5 float-right">
                     <li class="defaultbut"><a href="search">Explore</a></li>

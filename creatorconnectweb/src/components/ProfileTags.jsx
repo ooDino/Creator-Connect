@@ -2,7 +2,7 @@ import Tag from './Tag';
 
 import '../index.css';
 
-function ProfileTags(){
+function ProfileTags(props){
 
     function allTags(){ 
         if(zip.length !== 5){
@@ -18,7 +18,10 @@ function ProfileTags(){
           })
           .catch(err => console.log('Error'))
         }
-      }
+    }
+
+    console.log(props.taglist);
+    
 
     return(
         <div class="  box-border border-white min-h-[300px] min-w-[300px] w-[900px] max-h-[400px] border-[10px] rounded-2xl shadow-2xl bg-slate-200">
@@ -28,11 +31,9 @@ function ProfileTags(){
                         Tags
                     </div>
                     <div class="flex flex-flow-row justify-start w-full item-center h-[50%] w-full py-6 text-lg text-ellipsis overflow-hidden bg-slate-200">
-                        <Tag />
-                        <Tag />
-                        <Tag />
-                        <Tag />
-                        <Tag />
+                      {
+                        props.taglist.map((tag) => (<Tag tagname={tag}/>))
+                      }
                     </div>
             </div>
         </div>

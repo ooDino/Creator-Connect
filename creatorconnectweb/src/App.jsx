@@ -4,6 +4,7 @@ import Profilepage from './pages/Profile.jsx'
 import Searchpage from './pages/UserSearch.jsx'
 import Tutorialpage from './pages/Tutorial.jsx'
 import ContactUs from './pages/Contact.jsx'
+import MatchPage from './pages/Match.jsx'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/search" element={<Searchpage />} />
         <Route path='/tutorial' element={<Tutorialpage />} />
         <Route path='/contact' element={<ContactUs />} />
+        <Route path='/match' element={<MatchPage />} />
       </Routes>
     </BrowserRouter>
   );
