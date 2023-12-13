@@ -1,11 +1,11 @@
 import Navbar from '../components/Navbar';
 import '../index.css';
 
-function Tutorialpage(){
+function Tutorialpage(props){
     return (
         <div>
-            <Navbar />
-            <div class='bg-gradient-to-b from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-screen overflow-hidden'>
+            <Navbar user={props.user} logout={props.logout}/>
+            <div class='bg-gradient-to-b from-stone-950 from-10% via-slate-800 via-40% to-stone-950 to-90% h-screen overflow-hidden'>
                 <div class="box-border shadow-xl h-96 w-auto items-center border-4 text-white">
                     <div class=" h-50" >
                         <div class="flex justify-center mt-20 columns-2">
@@ -16,7 +16,6 @@ function Tutorialpage(){
                         </div>
                     </div>
                 </div>
-                <p class="text-2xl">WIP</p>
             </div>
             
         </div>

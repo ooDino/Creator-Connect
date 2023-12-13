@@ -2,7 +2,6 @@
     "user":{
         "name": "Jimmy",
         "bio": "Hey Buddy myname is jimmy232421",
-        "tags": ["Anime","Cartoons","Drawing","Streamer","Youtuber"],
-        "videos": ["https://www.youtube.com/embed/tgbNymZ7vqY","https://www.youtube.com/embed/YSxesqXFeQE"]
+        "tags": ["Anime","Cartoons","Drawing","Streamer","Youtuber"]
     }
 }
