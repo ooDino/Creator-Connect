@@ -3,10 +3,10 @@ import '../index.css';
 
 
 
-function Landingpage(){
+function Landingpage({ user, logout }){
     return (
         <div class="min-h-[2000px] min-w-[900px] h-screen w-screen ">
-            <Navbar />
+            <Navbar user={user} logout={logout}/>
             <div class='bg-gradient-to-b from-stone-950 from-10% via-slate-800 via-40% to-stone-950 to-90% h-full'>
                 <div class="bg-star-pattern box-border shadow-xl h-96 w-auto items-center border-2 text-white">
                     <div class=" h-50" >
